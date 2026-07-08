@@ -1,0 +1,84 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="blas" />
+          <option value="c-ares" />
+          <option value="ca-certificates" />
+          <option value="double-conversion" />
+          <option value="jax" />
+          <option value="jaxlib" />
+          <option value="jsoncpp" />
+          <option value="krb5" />
+          <option value="libabseil" />
+          <option value="libcurl" />
+          <option value="libcxx" />
+          <option value="libedit" />
+          <option value="libev" />
+          <option value="libgfortran" />
+          <option value="libgfortran5" />
+          <option value="libgrpc" />
+          <option value="libnghttp2" />
+          <option value="libopenblas" />
+          <option value="libprotobuf" />
+          <option value="libssh2" />
+          <option value="llvm-openmp" />
+          <option value="lz4-c" />
+          <option value="ml_dtypes" />
+          <option value="ncurses" />
+          <option value="numpy" />
+          <option value="numpy-base" />
+          <option value="openssl" />
+          <option value="opt_einsum" />
+          <option value="pip" />
+          <option value="re2" />
+          <option value="readline" />
+          <option value="scipy" />
+          <option value="setuptools" />
+          <option value="snappy" />
+          <option value="sqlite" />
+          <option value="tk" />
+          <option value="wheel" />
+          <option value="xz" />
+          <option value="zlib" />
+          <option value="zstd" />
+          <option value="absl-py" />
+          <option value="asttokens" />
+          <option value="chex" />
+          <option value="contourpy" />
+          <option value="decorator" />
+          <option value="etils" />
+          <option value="executing" />
+          <option value="fonttools" />
+          <option value="ipython" />
+          <option value="kiwisolver" />
+          <option value="matplotlib" />
+          <option value="matplotlib-inline" />
+          <option value="optax" />
+          <option value="packaging" />
+          <option value="parso" />
+          <option value="pexpect" />
+          <option value="pillow" />
+          <option value="prompt-toolkit" />
+          <option value="ptyprocess" />
+          <option value="pygments" />
+          <option value="pyparsing" />
+          <option value="pyqt5-qt5" />
+          <option value="pyqt5-sip" />
+          <option value="toolz" />
+          <option value="typing-extensions" />
+          <option value="wcwidth" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="scipy" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
