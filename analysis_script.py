@@ -32,6 +32,8 @@ trial_events = pd.read_csv("trial_events.csv") #running this line loads the tria
 '''Part 2: simulate a random first lick time distribution'''
 # task 4: load the "lick_events.csv"
 
-# task 5:
+# task 5: find the mean lick rate for the session (number of licks / time elapsed)
+
+# task 6: fit an exponential distribution modeling the probability density function of time to first lick
 
 
