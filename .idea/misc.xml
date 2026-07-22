@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="si_env" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="si_env" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="licksim" project-jdk-type="Python SDK" />
 </project>
