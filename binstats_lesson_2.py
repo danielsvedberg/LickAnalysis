@@ -7,16 +7,34 @@ You can run this script line by line, or run the whole script at once.
 #run the following to load the data
 import pandas as pd # pandas is a module for handling tabular data, like spreadsheets
 import numpy as np # numpy is a module for handling array data, giving python much of MATLAB's functionality# this line is needed to make matplotlib work on some computers, but not all. If you get an error when you run the script, try commenting out this line by putting a # in front of it.
+
+import matplotlib
+matplotlib.use('tkagg')
 import matplotlib.pyplot as plt # matplotlib is a module for making plots, like MATLAB's plotting functions
 
 trial_events = pd.read_csv("trial_events.csv") #loads the trial_events table
 trial_events['ttfl'] = trial_events['outcome_time'] - trial_events['start_time'] #makes a new column called 'ttf' (time to first lick) which is the difference between the outcome and start times.
 ttfl = trial_events['ttfl'] #assigns the 'ttfl' column to a variable called ttfl
 lick_events = pd.read_csv("lick_events.csv") #loads the lick_events table
+
 lam = len(lick_events) / (lick_events['time'].max() - lick_events['time'].min())
 def epdf(x, lam):
     y = lam * np.exp(-lam * x)
     return y
+
+# get the maximum likelihood estimate of lambda for ttfl
+# generate an array of possible lambda values to test
+lam_values = np.linspace(0, 2, 10000)
+mlelikes = []
+for lam in lam_values:
+    mlelikes.append(np.sum(np.log(epdf(ttfl, lam))))
+
+#plot the likelihood of each lambda value
+plt.plot(lam_values, mlelikes)
+plt.show(block=True)
+
+#shortcut get the maximum likelihood estimate of lambda for ttfl
+lam = lam_values[np.argmax(mlelikes)]
 
 '''
 Example 1: Hypothesis test against Monte Carlo simulation
@@ -43,6 +61,7 @@ Follow the instructions below to calculate this
 
 
 # Step 3: print the likelihood to see what it is.
+
 
 
 '''
